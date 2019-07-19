@@ -1,0 +1,8 @@
+<div *ngIf="ticket">
+  <h2>Ticket Details</h2>
+  <div><span>id: </span>{{ticket.id}}</div>
+  <div><span>App Name: </span>{{ticket.appName}}</div>
+  <div><span>Description: </span>{{ticket.description}}</div>
+  <div><span>Status: </span>{{ticket.status}}</div>
+  <button (click)="goBack()">go back</button>
+</div>

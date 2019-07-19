@@ -1,0 +1,16 @@
+<p>
+  Ticket list:
+</p>
+
+<ul class="tickets">
+  <li *ngFor="let ticket of tickets">
+    <a routerLink="/detail/{{ticket.id}}">
+    <span class="badge">{{ticket.id}}</span> {{ticket.appName}}
+    </a>
+  </li>
+  
+</ul>
+<div>
+  <a routerLink="/new">New ticket
+  </a>
+</div>
